@@ -1,0 +1,35 @@
+Q.1 Create the following directory structure. (Create empty files where necessary)
+
+hello
+├── five
+│   └── six
+│       ├── c.txt
+│       └── seven
+│           └── error.log
+└── one
+    ├── a.txt
+    ├── b.txt
+    └── two
+        ├── d.txt
+        └── three
+            ├── e.txt
+            └── four
+                └── access.log
+          
+Ans - 1st lane mkdir hello --> cd hello --> mkdir five--> mkdir one--> cd five--> mkdir six--> cd six--> touch c.txt --> mkdir seven--> cd seven--> touch error.log
+2nd lane cd ../../.. --> cd one --> touch a.txt --> touch b.txt --> mkdir two --> cd two --> touch d.txt --> mkdir three --> cd three --> touch e.txt -->  mkdir four --> cd four --> touch touch access.log
+
+Q.2 Delete all the files having the .log extension?
+Ans - find . -type f -iname \*.log -delete
+
+Q.3 Add the following content to a.txt?
+Ans - printf "\nUnix is a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, development starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others" >> file.txt
+
+Q.4 Delete the directory named five?
+Ans - rm -r five/
+
+Q.5 Rename the one directory to uno ?
+Ans - mv one uno
+
+Q.6 Move a.txt to the two direcotry ?
+Ans - mv uno/a.txt uno/two/
